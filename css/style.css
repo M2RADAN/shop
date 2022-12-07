@@ -1,0 +1,321 @@
+html {
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 400;
+    src: local('K2D Regular'), local('K2D-Regular'),
+        url('/source/fonts/K2D-Regular.ttf');
+}
+@font-face {
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 500;
+    src: local('K2D Medium'), local('K2D Medium'),
+        url('/source/fonts/K2D-Medium.ttf');
+}
+@font-face {
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 600;
+    src: local('K2D ExtraBold'), local('K2D ExtraBold'),
+        url('/source/fonts/K2D-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'bowler';
+    font-style: normal;
+    font-weight: 400;
+    src: local('bowler'), local('bowler'),
+        url('/source/fonts/BOWLER.otf');
+}
+
+
+body {
+    display: block;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    filter: drop-shadow(0, 10 , #000000);
+    padding: 4px 40px 0 0;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    margin-left: 60px;
+    position: fixed;
+    height: 48px;
+    background: #302B3F;
+    width: calc(100vw - 60px);
+    -webkit-filter: drop-shadow(0, 10 , #000000);
+}
+h2 {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 60px;
+    background: #302B3F;
+}
+.title {
+    margin-top: 6px;
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+}
+.form {
+}
+input {
+    border: 1px solid #000;
+    padding: 16px 0 0 0;
+    vertical-align: bottom;
+    background-color: #302B3F;
+    color: #FFFFFF;
+    height: 32px;
+}
+.h1content {
+    bottom: 5px;
+    position: relative;
+    right: -10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+.logo {
+    cursor: pointer;
+    margin-top: 9px;
+    width: 32px;
+    height: 32px;
+    background: #ffffff;
+    border-radius: 12px;
+}
+.profile {
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+}
+
+.icon {
+
+    position: relative;
+    width: 24px;
+    height: 24px;
+    left: 4px;
+    top: 4px;
+    background: url(/source/images/icon.png);
+
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.row__main{
+    display: flex;
+    padding: 60px 0px 0px 72px;
+    justify-content: center;
+    align-items: center;
+}
+.spacer {
+    flex-grow: 1!important;
+}
+.main {
+    max-width: 100%;
+    font-weight: 500;
+    color: #302B3F;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pad {
+    background: black;
+    border-radius: 12px;
+    transition: filter 0.500s ease-out;
+    transition: transform 0.5s ease-out;
+    cursor: pointer;
+}
+.pad:hover {
+    -webkit-filter: brightness(40%);
+    transition: filter 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    transform: scale(1.02);
+    filter: brightness(40%);
+}
+
+
+.pad__image {
+    background-position:center center;
+    background-size:cover;
+}
+.pad__bottom {
+    background-image: url(/source/images/1.png);
+}
+.pad__top {
+    background-image: url(/source/images/2.png);
+}
+.pad__left {
+    background-image: url(/source/images/1.png);
+}
+.pad__right {
+    background-image: url(/source/images/2.png);
+}   
+
+
+.pad__corner {
+    height: 750px;
+    width: 500px;
+    margin: 10px;
+}
+.pad__middle {
+    margin: 10px;
+    height: 370px;
+    width: 600px;
+}
+.collum {
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+}
+.letter {
+    font-family: 'bowler';
+    font-style: normal;
+    font-weight: 400;
+}
+.al {
+    background-color:rgba(100, 100, 100, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: opacity 0.250s ease-in-out;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.albackground {
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+.border {
+    border-radius: 12px;
+}
+.alBox {
+    font-size: 200%;
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 150px;
+    background: rgb(0, 0, 0);
+}
+
+button {
+    background:#302B3F;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: #777777;
+}
+
+.buttonal_b {
+    margin-top: 15px;
+    width: 60px;
+    height: 45px;
+}
+
+.button__navigation {
+    margin-top: 12px;
+    width: 48px;
+    height: 96px;
+}
+
+
+@media (max-width: 990px) {
+    .main {
+        flex-direction: column;
+    }
+    .pad__corner {
+        height: 600px;
+        width: 800px;
+    }
+    .pad__middle {
+        width: 800px;
+        height: 600px;
+    }
+    h2 {
+        display: none;
+    }
+    .row__main {
+        padding: 300px 0px 60px 0px;
+    }
+    h1 {
+        width: 100vw;
+        margin: auto;
+        height: 240px;
+        padding: 8px 120px;
+
+    }
+    .title {
+        transform: scale(2);
+    }
+    input {
+        width: 350px;
+        height: 75px;
+        font-size: 30px;
+        
+    }
+   }
+@media (max-height: 900px) {
+    .pad__corner {
+        height: 580px;
+    }
+    .pad__middle {
+        height: 285px;
+    }
+}
