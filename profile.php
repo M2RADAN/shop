@@ -11,7 +11,7 @@ session_start();
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body id = "body">
-
+<!--
     <div id = "al" class = "al letter">
         <div id = "al_box" class = "alBox border"><span class = "letter">
             Тебе есть 18?
@@ -22,7 +22,7 @@ session_start();
         </row>
         </div>
 </div>
-
+-->
     <h1 class = "letter">
         <div class = "title" onclick = "window.location.href = 'index.php'" >
             E-LS
@@ -51,23 +51,7 @@ session_start();
 
 
     <div class = "row__main row">
-        <div class ="main border">
-            <div onclick = "window.location.href = 'catalog.php'" class = "pad__corner pad pad__left pad__image">
-                <div class = "filter">
-                    <div class = "pad__text letter">Каталог</div>
-                </div>
-            </div>
-            <div class = "collum">
-                <div class = "pad__middle pad pad__top pad__image">
-                    <div class = "filter"></div>
-                </div>
-                <div class = "pad__middle pad pad__bottom pad__image">
-                    <div class = "filter"></div>
-                </div>
-            </div>
-            <div class = "pad__corner pad pad__right pad__image">
-                <div class = "filter"></div>
-            </div>
+        <div class ="main">
         </div>
     </div>
 

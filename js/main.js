@@ -19,3 +19,10 @@ function fuckoff() {
         () => {window.location = 'https://natribu.org/ru/. html';},2 * 1000
       );
 }
+
+function show_info() {
+  if (window.innerWidth <= 990) {
+    var info = document.getElementById("info");
+    info.style.display =  "flex";
+  }
+}
